@@ -1,0 +1,40 @@
+<view class="container">
+    
+    <view>
+        <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <swiper-item>
+                    <image src="../../images/goodslist/{{shopppingDetails.productImage}}" class="slide-image"/>
+                </swiper-item>
+        </swiper>
+    </view>
+
+    <view class="shopping_container">
+        <view class="detail_title">{{shopppingDetails.productName}}</view>
+        <view class="detail_price">价格：{{shopppingDetails.salePrice}}</view>
+        <view class="desc">描述：
+        <textarea>
+                 大苏打挖到时代开发和关键时刻两个活动上离开萨蒂阿散井覅环境和顾客
+        </textarea>
+        </view>
+        <view class='order'>
+        <button class='btn1' open-type='openSetting' data-typeId='{{shopppingDetails.typeId}}' data-pId='{{shopppingDetails.productId}}' bindtap="addCar">
+          <image class='btnCart' src='../../images/addCatr.png'></image>
+          <view class='addcart'>{{cartTips}}</view>
+        </button>
+        <button class='btn2' open-type='openSetting' bindtap="Collction" data-pId='{{shopppingDetails.productId}}'>
+          <view class='coll'>收藏</view>
+          <image class='btnColl' src='{{colletionUrl}}'></image>
+        </button> 
+        </view>
+        <!-- 买单按钮 -->
+        <view class="buy-btn">
+            <button type="warn" bindtap="toPay">立即购买</button>
+          </view>
+    </view>
+
+    <view>
+        <view></view>
+    </view>
+
+</view>

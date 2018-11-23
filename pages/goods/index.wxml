@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+    <view>
+        <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{images}}">
+                <swiper-item>
+                    <image src="../../images/goodslist/{{item.productImage}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="text">
+        <view class="line_flag"></view>
+        <text>主题馆</text>
+    </view>
+    
+    <view class="venues_box">
+        <view class="venues_list">
+            <block wx:for="{{venuesItems}}" wx:for-index="index" wx:for-item="item">
+                <view class="venues_item">
+                    <navigator url="../brand/index?id={{item.typeId}}">
+                        <image src="../../images/logo/{{item.typeLogo}}"/>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+
+    <view class="text">
+        <view class="line_flag"></view>
+        <text>环球精选</text>
+    </view>
+    
+
+    <view class="choice_box">
+        <view class="choice_list">
+            <block wx:for="{{choiceItems}}" wx:for-index="index" wx:for-item="item">
+                <navigator url="../details/index?id={{item.productId}}">
+                    <view class="choice_item">
+                        <image src="../../images/goodslist/{{item.productImage}}"/>
+                        <view class="title">{{item.productName}}</view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+
+    <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>
+
+</view>

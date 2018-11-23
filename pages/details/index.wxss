@@ -1,0 +1,108 @@
+page{
+    background-color: #fff;
+    font-size: 14px;
+}
+.swiper_box {
+    width: 100%;
+    height: 320px;
+}
+.swiper_box .slide-image{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.shopping_container{
+    padding: 0 30rpx;
+}
+.shopping_container .title{
+    margin: 20rpx 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.shopping_container .reason{
+    margin: 20rpx 0;
+    color: #939393;
+    line-height: 22px;
+}
+
+.detail_title {
+  font-size: 15px;
+  color: black;
+  padding: 10px 10px 0px 10px;
+  line-height: 1.5em;
+}
+
+.detail_price {
+  font-size: 17px;
+  color: #dd3a40;
+  padding: 10px;
+  border-bottom: 10px solid silver;
+  border-bottom-color: #efeff4;
+}
+.desc{
+     width: 100rpx;
+     height: 50rpx;
+     z-index: 1;
+}
+.desc textarea{
+  width: 500rpx;
+}
+.order{
+  width: 250rpx;
+  height: 150rpx;
+  position: relative;
+  margin-top: 100rpx;
+  padding: 0;
+  z-index: 10;
+}
+.order .btn1{
+  width:100%;
+  height: auto;
+  position: absolute;
+}
+.order .btn1 view {
+  font-size: 30rpx;
+  float: left;
+  padding: 0;
+  position: absolute;
+  margin-left: 70rpx;
+  color: burlywood;
+}
+
+.order .btn1 image {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+.order .btn2{
+  width:100%;
+  height: auto;
+  position: absolute;
+  margin-left: 430rpx;
+}
+
+.order .btn2 view {
+  font-size: 30rpx;
+  float: left;
+  padding: 0;
+  position: absolute;
+  margin-left: 70rpx;
+  color: burlywood;
+}
+
+.order .btn2 image {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+.buy-btn {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+}

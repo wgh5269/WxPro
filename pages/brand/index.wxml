@@ -1,0 +1,15 @@
+<view class="container">
+    <block wx:for="{{infoList}}" wx:for-index="index" wx:for-item="item">
+        <view class="brand_item">
+            <navigator url="../list/index?typeid={{item.typeId}}">
+                <image src="../../images/logo/{{item.typeLogo}}" class="pic"></image>
+                <view class="right_cont">
+                    <image src="../../images/LeadGoods/{{item.typeLeadGoods[posi].productImage}}" class="logo"></image>
+                    <text class="name">{{item.typeLeadGoods[posi].productName}}</text>
+                     <text class="brief">{{item.typeLeadGoods[posi].productId}}</text><!--描述 -->
+                    <text class="price">￥{{item.typeLeadGoods[posi].salePrice}}元/件起</text>
+                </view>
+            </navigator>
+        </view>
+    </block>
+</view>
